@@ -1,2 +1,4 @@
-# SQL-Scripts
-A repository holding SQL query scripts from different sources
+# SQL-Queries
+This repository holds SQL scripts from querying various database answering certain business questions.
+
+All queries are currently in postgreSQL.
