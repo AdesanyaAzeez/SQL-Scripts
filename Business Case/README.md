@@ -9,6 +9,7 @@ You've been hired by an online retail store that sells various products. The sto
 Your task is to design a relational database to meet their requirements.
 
 Database Design:
+
 **1. Tables:**
    - Products: Contains information about each product.
      - Columns: product_id, product_name, category, unit_price, stock_quantity
