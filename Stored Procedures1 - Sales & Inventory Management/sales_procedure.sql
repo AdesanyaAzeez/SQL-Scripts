@@ -2,7 +2,7 @@
 CREATE OR REPLACE PROCEDURE pr_sales_record (pm_cust_id VARCHAR(20), pm_product_name VARCHAR(200), pm_quantity INT)
 LANGUAGE plpgsql
 AS $$
-DECLARE
+DECLARE 
 	vr_product_count INT;
 	vr_quantity_check INT;
 	vr_product_id INT;
