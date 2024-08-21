@@ -15,7 +15,7 @@ DECLARE
 	vr_id_exist BOOLEAN;
 	vr_name_exist BOOLEAN;
 	
-BEGIN
+BEGIN 
 	-- use ID parameter to check for product ID and NAME
 	SELECT product_id, product_name
 		INTO vr_product_id, vr_name_check
