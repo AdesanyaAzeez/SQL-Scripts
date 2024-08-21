@@ -70,8 +70,8 @@ BEGIN
 
     -- for loop to list all available products and their respective price in the products table
 		FOR vr_product_list IN
-    	SELECT product_name, price FROM products
-			LOOP
+    		SELECT product_name, price FROM products
+		LOOP
 			-- Pass the column values into the RAISE NOTICE statement
 			RAISE NOTICE '% @ %', vr_product_list.product_name, vr_product_list.price;
 		END LOOP;
