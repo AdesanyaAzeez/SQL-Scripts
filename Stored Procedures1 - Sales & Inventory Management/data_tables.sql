@@ -1,6 +1,6 @@
 -- create a data table sales
 CREATE TABLE sales
-  (
+	(
 	row_id SERIAL,
 	order_date TIMESTAMP DEFAULT NOW(),
 	customer_id VARCHAR(20),
@@ -9,17 +9,28 @@ CREATE TABLE sales
 	total_price FLOAT,
 	discount_rate FLOAT,
 	FOREIGN KEY (product_id) REFERENCES products(product_id)
-  );
+	);
 
 -- create a data table products
 CREATE TABLE products
-  (
+	(
 	product_id INT PRIMARY KEY,
 	product_name VARCHAR(200),
 	price FLOAT,
 	quantity_sold INT,
 	quantity_available INT
-  );
+	);
+
+-- create a table to hold changes made to product table
+CREATE TABLE product_history
+	(
+	row_id SERIAL,
+	product_id INT,
+	price FLOAT,
+	unit_added INT,
+	created_at TIMESTAMP,
+	narration VARCHAR(100)
+	);
 	
 -- insert sample values into the products table
 INSERT INTO products(product_id, product_name, price, quantity_sold, quantity_available)
